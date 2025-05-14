@@ -6,7 +6,7 @@ body {
   color: #272829;
   font-family: "Lato", sans-serif;
   font-size: 17px;
-} 
+}
 
 a {
   color: #0563bb;
@@ -133,16 +133,6 @@ h6 {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
-}
-
-
-@media (max-width: 992px) {
-  #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
-    left: -300px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -287,7 +277,7 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 48px;
   }
 
@@ -315,8 +305,8 @@ section {
   font-family: "Fira Sans", sans-serif;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 1px;
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
   display: inline-block;
   background: #1e3c72;  /* fallback for old browsers */
@@ -326,33 +316,31 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.section-title .title-shape {
-  width: 200px;
-  height: 20px;
-  margin: 0 auto;
-  color: #1e3c72;
-  opacity: 0.8;
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #00b4d8;
+  bottom: 1px;
+  left: calc(50% - 60px);
 }
 
-.section-title .title-shape svg {
-  width: 100%;
-  height: 100%;
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0077b6;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
 }
-
-@media (max-width: 768px) {
-  .section-title h2 {
-    font-size: 32px;
-  }
-
-  .section-title .subtitle-wrapper .subtitle {
-    font-size: 13px;
-  }
-}
-
 
 /*--------------------------------------------------------------
 # About
@@ -363,6 +351,12 @@ section {
   line-height: 1.5;
   margin-bottom: 25px;
   text-align: justify;
+}
+
+.about .fixed-img {
+  width: 270px;        /* Fixed size instead of % */
+  height: auto;       /* Ensures circular shape */
+  object-fit: cover;   /* Ensures image fills the circle */
 }
 
 .about a {
@@ -377,12 +371,9 @@ section {
 
 .about .content ul li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .about .content ul a {
-  margin-top: -5px;
   display: inline-block;
 }
 
@@ -524,16 +515,6 @@ section {
   line-height: 24px;
   font-size: 16px;
   margin-bottom: 0;
-}
-
-.research_interest .icon-box:hover {
-  transform: scale(1.05);
-  transform: translateY(-5px);
-}
-
-.research_interest .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 10px 10px 0 #00000014;
 }
 
 .research_interest .iconbox-blue i {
@@ -691,7 +672,7 @@ section {
 # Test Scores
 --------------------------------------------------------------*/
 .test_score .test_score-box {
-  padding: 0px 10px 10px 35px;
+  padding: 10px;
   border-radius: 10px;
   transition: all ease-in-out 0.3s;
 }
@@ -1239,12 +1220,17 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
   border-top: 1px solid #ccc;
 }
 
+@media (max-width: 992px) {
+  .footer {
+    padding: 10px 10px;
+  }
+}
 /* Left and middle sections */
 .footer-left,
 .footer-middle {
   flex: 0 0 auto;
   width: 25%; /* Adjust as needed, total should not exceed 50% */
-  min-width: 200px;
+  min-width: 300px;
   margin: 10px;
 }
 
@@ -1268,10 +1254,6 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
   font-size: 20px;
   color: #333;
   text-decoration: none;
-}
-
-.social-icons a:first-child {
-  margin-left: 2px;
 }
 
 .social-icons a:hover {
@@ -1441,7 +1423,7 @@ The hamburger stuff
 }
 
 /* =======================================
-The hover stuff
+The CV hover stuff
 ======================================= */
 .cta {
   position: relative;
