@@ -1239,7 +1239,7 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
   margin: 10px;
   display: flex;
   align-items: center;     /* Vertical center */
-  justify-content: center; /* Horizontal center */
+  justify-content: right; /* Horizontal center */
 }
 
 .social-icons {
