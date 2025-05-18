@@ -26,9 +26,9 @@ Click here👉  [hamimulislam.github.io](https://hamimulislam.github.io)
 ###
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamimulislam/Hamimulislam/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamimulislam/Hamimulislam/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Hamimulislam/Hamimulislam/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamimulislam/hamimulislam.github.io/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamimulislam/hamimulislam.github.io/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Hamimulislam/hamimulislam.github.io/output/pacman-contribution-graph.svg">
 </picture>
 
 ###
