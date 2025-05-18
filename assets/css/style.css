@@ -1222,28 +1222,18 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
   align-items: flex-start;
 }
 
-/* Left and middle sections */
-.footer-left,
-.footer-middle {
-  flex: 0 0 auto;
-  width: 25%; /* Adjust as needed, total should not exceed 50% */
-  min-width: 200px;
-  margin: 10px;
+@media (max-width: 992px) {
+  .footer {
+    padding: 20px 10px;
+  }
 }
 
-/* Right quote section taking 50% */
-.footer-right {
-  flex: 1;
-  min-width: 300px;
-  max-width: 50%;
-  margin: 10px;
-  display: flex;
-  align-items: center;     /* Vertical center */
-  justify-content: right; /* Horizontal center */
+.footer-left {
+  max-width: 600px;
 }
 
-.social-icons {
-  margin: 10px 0;
+.footer-left h5 {
+  margin-bottom: 10px;
 }
 
 .social-icons a {
