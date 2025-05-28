@@ -1185,13 +1185,13 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
 
 .social-icons a {
   color: white;
-  margin-right: 12px;
-  font-size: 20px;
+  margin-right: 8px;
+  font-size: 23px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:first-child {
-  margin-left: 2px;
+  margin-left: 1px;
 }
 
 .social-icons a:hover {
@@ -1207,7 +1207,7 @@ background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, F
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 14px;
   color: white;
   font-family: "Lora", serif;
